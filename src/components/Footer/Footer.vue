@@ -6,9 +6,9 @@
         <span>PlayInfJunior</span>
       </router-link>
       <ul class="footer__list">
-        <li><a href="" class="footer__link">Неге ойындар?</a></li>
-        <li><a href="" class="footer__link">Тесттер</a></li>
-        <li><a href="" class="footer__link">Ойындар</a></li>
+        <li><router-link :to="{hash: '#why'}" class="footer__link">Неге ойындар?</router-link></li>
+        <li><router-link :to="{hash: '#tests'}" class="footer__link">Тесттер</router-link></li>
+        <li><router-link :to="{hash: '#games'}" class="footer__link">Ойындар</router-link></li>
       </ul>
       <div class="footer__icons">
         <a target="_blank" href="https://t.me/tukhtabaevaa">

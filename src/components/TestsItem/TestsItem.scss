@@ -1,0 +1,56 @@
+.tests__item{
+    // background: url('@/assets/images/pattern.png');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
+    background: var(--blue);
+    border-radius: 15px;
+    padding: 15px 15px 8px;
+    border: 2px solid var(--blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: .4s;
+    max-width: 175px;
+    @include media(480){
+        height: 220px;
+        width: 200px;
+    }
+    @include media(400){
+        height: 190px;
+        width: 150px;
+        padding: 10px 15px 5px;
+    }
+    &:hover{
+        transform: translateY(-10px);
+        background: var(--orangegold);
+    }
+    &:hover &-link{
+        background: var(--orangegold);
+        border-color: black;
+    }
+    &-title{
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        color: var(--whitebg);
+        line-height: 1.1;
+        @include media(400){
+            font-size: 16px;
+        }
+        // background: var(--blue);
+    }
+    &-link{
+        background: var(--green);
+        color: white;
+        padding: 5px 10px;
+        border-radius: 10px;
+        transition: .4s;
+        border: 1px solid transparent;
+        cursor: pointer;
+        @include media(400){
+            padding: 3px 6px;
+        }
+    }
+}

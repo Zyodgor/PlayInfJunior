@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fredoka";
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.container{
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+input,button{
+    border: none;
+    outline: none;
+    background: unset;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #F4F4F4;
+}
+
+:root{
+    --blue: #0F4C81;
+    --orangegold: #F9A826;
+    --whitebg: #F4F4F4;
+    --green: #21BF73;
+}

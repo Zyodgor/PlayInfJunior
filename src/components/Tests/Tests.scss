@@ -1,0 +1,76 @@
+.tests {
+    background: var(--whitebg);
+    // background: url('@/assets/images/pattern.png');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-attachment: fixed;
+    padding: 30px 15px;
+
+    &__title {
+        text-align: center;
+        font-size: 35px;
+        color: var(--blue);
+        font-weight: 700;
+        margin-bottom: 5px;
+
+        @include media(994) {
+            font-size: 30px;
+        }
+
+        @include media(528) {
+            font-size: 26px;
+        }
+
+        @include media(420) {
+            font-size: 23px;
+        }
+    }
+
+    &__subtitle {
+        // color: var(--whitebg);
+        max-width: 500px;
+        font-size: 20px;
+        margin: 0 auto;
+        line-height: 1.1;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    &__list {
+        gap: 20px 10px;
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: 200px;
+        @include media(1180){
+            grid-template-columns: repeat(4, minmax(100px, 175px));
+            justify-items: center;
+            justify-content: center;
+        }
+        @include media(800){
+            grid-template-columns: repeat(3, minmax(100px, 175px));
+        }
+        @include media(610){
+            grid-template-columns: repeat(2, minmax(100px, 175px));
+        }
+        @include media(480){
+            grid-template-columns: repeat(1, 175px);
+            display: none;  
+        }
+    }
+}
+
+.swiper{
+    &__list{
+        margin-top: 30px;
+        &-slide{
+            justify-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+.swiper-button-prev::after, 
+.swiper-button-next::after{
+    color: var(--orangegold);
+}

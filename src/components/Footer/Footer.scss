@@ -1,0 +1,99 @@
+.footer{
+    background: var(--blue);
+    &__logo{
+        color: var(--whitebg);
+        font-size: 30px;
+        font-weight: bold;  
+        line-height: 1.1;
+        display: flex;
+        align-items: center;
+        @include media(650){
+            font-size: 25px;
+        }
+        @include media(740){
+            font-size: 22px;
+        }
+        & img{
+            width: 60px;
+            @include media(740){
+                width: 50px;
+            }
+            @include media(650){
+                width: 45px;
+            }
+        }
+    }
+    &__content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 15px;
+        gap: 0 50px;
+        flex-wrap: wrap;
+        align-content: center;
+        @include media(860){
+            // justify-content: center;
+            justify-items: center;
+            padding: 15px;
+        }
+        @include media(615){
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 15px;
+        }
+    }
+    &__list{
+        display: flex;
+        gap: 25px;
+        @include media(740){
+            gap: 10px;
+        }
+        @include media(615){
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__link{
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: 'ComicNeue';
+        transition: .4s;
+        padding: 5px 10px;
+        border-bottom: 2px solid transparent;
+        @include media(740){
+            font-size: 18px;
+        }
+        &:hover{
+            color: var(--orangegold);
+            border-bottom: 2px solid var(--orangegold);
+        }
+    }
+    &__icons{
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        margin-top: 10px;
+        @include media(860){
+            width: 100%;
+            justify-items: center;
+            justify-self: center;
+        }
+        & img{
+            width: 38px;
+            transition: .4s;
+            @include media(615){
+                width: 32px;
+            }
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+    }
+    &__end{
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        background: var(--orangegold);
+    }
+}

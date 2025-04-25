@@ -71,13 +71,13 @@ const games = ref([
   },
   {
     id: 2,
-    name: "Кіртіпкені ұр!: Ақпарат тасымалдаушы құралдар (Носители информации)",
+    name: "Көртышқанды ұр!: Ақпарат тасымалдаушы құралдар (Носители информации)",
     img: firstGameImg,
     url: "https://wordwall.net/ru/embed/62fb1923d2ce40b7808ba08e16de769e?themeId=23&templateId=45&fontStackId=0"
   },
   {
     id: 3,
-    name: "Кіртіпкені ұр!: Программалар түрлері (Типы программ)",
+    name: "Көртышқанды ұр!: Программалар түрлері (Типы программ)",
     img: secondGameImg,
     url: "https://wordwall.net/ru/embed/7e8f7c536d4d46eba99632d2b8e0f1b4?themeId=22&templateId=45&fontStackId=0"
   },

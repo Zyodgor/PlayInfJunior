@@ -3,11 +3,11 @@
     <div class="games__card-info">
       <div class="games__card-img">
         <img :src="game.img" alt="" />
-        <a class="games__card-link" @click="openGame(game)">Играть</a>
+        <a class="games__card-link" @click="openGame(game)">Ойнау</a>
       </div>
       <h3 class="games__card-title">{{ game.name }}</h3>
     </div>
-    <a class="games__card-linkMobile" @click="openGame(game)">Играть</a>
+    <a class="games__card-linkMobile" @click="openGame(game)">Ойнау</a>
   </div>
 </template>
 

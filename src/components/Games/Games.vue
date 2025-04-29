@@ -1,7 +1,5 @@
 <template>
   <section class="games" id="games">
-    <h2 class="games__title">Ойындар</h2>
-    <p class="games__subtitle">Ойындай қызықты — сабақтай пайдалы!</p>
     <div class="container games__cards">
       <GameCard 
         v-for="game in games"

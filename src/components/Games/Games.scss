@@ -60,7 +60,6 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 15px;
-        margin-top: 30px;
         @include media(760){
             grid-template-columns: minmax(280px, 470px);
             justify-content: center;
